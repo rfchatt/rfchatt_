@@ -1,11 +1,13 @@
 body {
-    background-color: white;
+    background-color: black;
 }
+
+/* main2 */
 
 header {
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #efecdf;
+    background-color: rgba(0, 0, 0, 0.416);
     align-content: center;
     text-align: center;
     width: 100%;
@@ -29,20 +31,14 @@ header a:not(:last-of-type) {
     font-size: 15px;
     text-decoration: none;
     text-align: center;
-    color: rgb(79, 60, 6);
+    color: rgb(23, 90, 14);
     margin: 40px;
-}
-
-header a:not(:last-of-type):hover {
-    transition: 1s;
-    color: gold;
-    font-size: 18px;
 }
 
 .button {
     color: black;
     padding: 8px 20px;
-    background-color: rgb(222, 197, 7);
+    background-color: rgb(23, 90, 14);
     border-radius: 45px;
     float: right;
     text-decoration: none;
@@ -52,8 +48,8 @@ header a:not(:last-of-type):hover {
 .button1 {
     border: solid black;
     color: black;
-    padding: 6px 15px;
-    background-color:#fffdf3;
+    padding: 8px 20px;
+    background-color:rgb(23, 90, 14);
     border-radius: 45px;
     text-decoration: none;
     margin-right: 25px;
@@ -61,18 +57,23 @@ header a:not(:last-of-type):hover {
 
 .button2 {
     color: black;
-    padding: 8px 22px;
-    background-color: rgb(222, 197, 7);
+    padding: 8px 20px;
+    background-color: rgb(23, 90, 14);
     border-radius: 45px;
     text-decoration: none;
 }
 
 main {
+    text-align: center;
     height: 475px;
-    background-color:  #fffdf3;
+    background-color:  black;
     padding-top: 100px;
     padding-bottom: 120px;
     width: 100%;
+} 
+
+main a {
+    color: white;
 }
 
 .maindiv1 {
@@ -102,33 +103,30 @@ main {
     justify-content: center;
 }
 
-.navhover {
-    color: white;
-}
-
-.navhover:hover { 
-    color: gold;
-    transition: 0.5s;
-}
-
 a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
 
 nav {
-    width: 100%;
-    background-color: rgb(33, 33, 33);
+    align-self: center;
+    width: 70%;
+    background: linear-gradient(135deg, #232323, #4b4b4b);
     align-content: center;
     height: 47px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
 }
 
 nav a {
     padding: 30px;
-    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-}
+    text-decoration: none;
+}   
 
 .main_first {
     height: 300px;
@@ -136,24 +134,25 @@ nav a {
     text-align: center;
 }
 
-.main_first div {
-    color: black;
-    padding: 25px 20px;
-    background-color: rgba(184, 184, 184, 0.674);
-    border-radius: 7px; 
-    width: 200px;
-}
-
-.button23 {
-    color: black;
-    padding: 11px 40px;
-    background-color: rgb(222, 197, 7);
-    border-radius: 45px;
+.main_first a:first-of-type {
+    font-size: 35px;
+    color: white;
     text-decoration: none;
 }
 
-.main2 div div {
+.main_first div {
     color: black;
+    padding: 25px 20px;
+    background-color: rgba(0, 0, 0, 0.674);
+    width: 200px;
+}
+
+.main2 {
+    height: 750px;
+    margin-top: -150px;
+}
+
+.main2 div div {
     border-radius: 10px;
     width: 100%;
     padding-bottom: 20px;
@@ -161,15 +160,26 @@ nav a {
     display: flex;
     flex-direction: column;
     padding: 15px;
-    border: 1px solid black;
-    background: #fffdf3;
-    min-height: 280px; 
+    border: 1px solid rgb(23, 90, 14);
+    background: black;
+    min-height: 280px;
+}
+
+.main2 h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left; 
+    margin-left: 10px;
+}
+
+.main2 a:first-of-type {
+    font-size: 35px;
 }
 
 .divbutton {
     margin: auto;
     border: 1px;
-    background-color: rgb(45, 45, 45);
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
     border-radius: 30px;
     padding: 7px 40px;
 }
@@ -188,88 +198,62 @@ nav a {
     background: linear-gradient(50%);
 }
 
+/* footer erea */
 footer {
-    display: flex;
+    /* border-top: rgb(131, 97, 13) solid 1px; */
+    background: linear-gradient(135deg, #000000, #192019a8);
+    color: white;
+    display: grid;
+    justify-content: center;
     align-items: center;
-    height: 350px;
-    background-color: rgb(39, 39, 39);
+    height: 200px;
+    background-color: black;
 }
 
-footer img {
-    width: 150px;
-    margin-left: 120px;
+.footer_div1 {
+    text-align: center;
+    margin: auto;
 }
 
-footer div {
-    border: 1px solid white;
-    height: 50%;
-    width: 50%;
+.footer_div2 {
+    color: wheat;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* gap: 30px; */
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 in a row */
+    gap: 10px;
 }
 
-.laastdiv {
-    border-radius: 20px;
-
-    color: black;
-    border-radius: 10px;
-    width: 100%;
-    padding-bottom: 20px;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    border: 1px solid black;
-    background-color: rgba(128, 128, 128, 0.185);
-    min-height: 280px;  
+.footer_div2 img {
+    margin-right: 10px;
 }
 
-.dern_div {
-    background-color: #c7c7c789;
-    min-height: 280px;
-    color: black;
-    border-radius: 20px;
-    width: 100%;
-    padding-bottom: 20px;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: column;
-    padding: 15px; 
-}
-
-.footer_div {
-    justify-self: center;
-    height: 50px;
-    display: flex;
-    width: 100%;
-}
-
-.footer_divLT {
-    width: 50%;
-    height: 50px;
-}
-
-.footer_divRT {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    justify-self: flex-end;
-    height: 50px;
-}
-
-.classdivfooter {
-    right: 200px;
+.footer_div2 a {
+    color: white;
+    text-decoration: none;
 }
 
 @media (max-width: 576px) {
+
+    .footer_div2 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-rows: repeat(2, auto);   /* 2 rows */
+        justify-items: center;
+    }
+
     body {
         width: 100%;
         margin-left: 0%;
-        background-color: #fffdf3;
+        background-color: black;
     }
     .header_media {
         height: 30px;
         left: 0%;
         width: 100%;
-        background-color: #fffdf3;
+        background-color: rgba(0, 0, 0, 0.477);
     }
     .header_media img {
         width: 60px;
@@ -282,7 +266,7 @@ footer div {
     .button {
         color: black;
         padding: 5px 10px;
-        background-color: rgb(222, 197, 7);
+        background-color: rgb(23, 90, 14);
         border-radius: 45px;
         float: right;
         text-decoration: none;
@@ -327,19 +311,25 @@ footer div {
     .navhover {
         width: 100%;
     }
-    .navhover:nth-last-child(-n+4) {
-        display: none;
-
-    }
     .button23 {
         padding: 9px 25px;
         margin: auto;
     }
-    .main_first {
-        margin-bottom: -60px;
+    #_1st {
+        height: 700px;
+    }
+    .main_first a:first-of-type {
+        font-size: 26px;
+    }
+    .main_first #text {
+        font-size: 15px;
     }
     .main2 {
-        margin-top: 400px;
+        margin-top: 30px;
+        height: 2300px;
+    }
+    .main2 a:first-of-type {
+    font-size: 26px;
     }
     .main2div1 {
         flex-wrap: wrap;
@@ -358,14 +348,7 @@ footer div {
         display: block;
         flex-direction: column;
     }
-    footer {
-        display: flex;
-        display: grid;
-        height: 300px;
-    }
-    .classdivfooter {
-        justify-self: center;
-    }
+
 }
 
 @media (max-width: 430px) {
@@ -375,11 +358,17 @@ footer div {
     .divbutton {
         margin-top: 15px;
     }
+    .main2 {
+        height: 2400px;
+    }
 }
 
 @media (max-width: 380px) {
     .main3 {
         margin-top: 1690px;
+    }
+    .main2 {
+        height: 2600px;
     }
 }
 
@@ -401,5 +390,8 @@ footer div {
     }
     nav {
         margin-top: 80px;
+    }
+        .main2 {
+        height: 2500px;
     }
 }
