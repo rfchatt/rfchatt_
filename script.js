@@ -146,7 +146,7 @@
         function setLanguage(lang) {
             currentLanguage = lang;
 
-            // Update active button
+            // Update active button 
             document.querySelectorAll('.lang-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
