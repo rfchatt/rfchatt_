@@ -1,5 +1,4 @@
 
-        // Multi-language support
         const translations = {
             en: {
                 "nav.home": "Home",
@@ -7,7 +6,7 @@
                 "nav.portfolio": "Portfolio",
                 "nav.education": "Education",
                 "nav.talk": "Let's Talk",
-                "hero.title": "Building Beautiful & Functional Mobile Apps",
+                "hero.title": "< ABDERRAFIE CHATE />",
                 "hero.desc": "I'm a passionate Mobile App Developer specializing in creating intuitive, user-centric applications for Android & iOS. With expertise in modern technologies and a commitment to excellence, I turn ideas into impactful digital experiences.",
                 "hero.btn1": "Get in Touch",
                 "hero.btn2": "View My Work",
@@ -70,7 +69,7 @@
                 "nav.portfolio": "Portefeuille",
                 "nav.education": "Éducation",
                 "nav.talk": "Parlons",
-                "hero.title": "Créer des applications mobiles belles et fonctionnelles",
+                "hero.title": "< ABDERRAFIE CHATE />",
                 "hero.desc": "Je suis un développeur d'applications mobiles passionné spécialisé dans la création d'applications intuitives et centrées sur l'utilisateur pour iOS et Android. Avec mon expertise en technologies modernes et mon engagement envers l'excellence, je transforme les idées en expériences numériques percutantes.",
                 "hero.btn1": "Entrez en contact",
                 "hero.btn2": "Voir mon travail",
@@ -131,10 +130,8 @@
 
         let currentLanguage = localStorage.getItem('language') || 'en';
 
-        // Set initial language
         setLanguage(currentLanguage);
 
-        // Language switcher buttons
         document.querySelectorAll('.lang-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 const lang = this.getAttribute('data-lang');
@@ -146,7 +143,6 @@
         function setLanguage(lang) {
             currentLanguage = lang;
 
-            // Update active button 
             document.querySelectorAll('.lang-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
@@ -154,7 +150,6 @@
 
             document.documentElement.lang = lang;
 
-            // Update all text elements
             document.querySelectorAll('[data-i18n]').forEach(element => {
                 const key = element.getAttribute('data-i18n');
                 element.textContent = translations[lang][key] || key;
