@@ -1243,8 +1243,8 @@
             }
         }
 
-/* This targets all selected text on the page */
+
 ::selection {
-  background-color: var(--primary-dark); /* Your brand color */
-  color: var(--text-primary);            /* The text color when highlighted */
+  background-color: var(--primary-dark);
+  color: var(--text-primary); 
 }
